@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>NCOVID2019 Tracker India</title>
+  </head>
+  <body>
+                <!--Navbar -->
+                  <div class="container">
+                    <nav class="rounded navbar navbar-expand-lg navbar-light bg-light" aria-label="Eleventh navbar example">
+                      <div class="container-fluid">
+                        <p class="navbar-brand">NCOVID2019 Tracker India</p>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample09">
+                          <ul class="mb-2 navbar-nav ms-auto mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="/ncovid2019Tracker-global/index.html">India</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="../index.html">Home</a>
+                            </li> 
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
+                <!-- Navbar Ends -->
+   
+                  <!-- Dashboard  -->
+                          <div class="countryDashboard" id="countryDashboard"> <!-- code here  -->   </div>          
+                  <!--  dashboard ends-->
+                  
+                  <!-- select state -->
+                  <div class="px-4 py-5 my-5 text-center">
+                      <div class="mx-auto col-lg-6">
+                        <p class="mb-4 lead">Select the State to retreive The Data</p>
+                        <div class="gap-2 d-grid d-sm-flex justify-content-sm-center">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select State</option>
+                                <option value="AN">Andaman and Nicobar Islands</option>
+                                <option value="AP">Andhra Pradesh</option>
+                                <option value="AR">Arunachal Pradesh</option>
+                                <option value="AS">Assam</option>
+                                <option value="BR">Bihar</option>
+                                <option value="CH">Chandigarh</option>
+                                <option value="CT">Chhattisgarh</option>
+                                <option value="DN">Dadra and Nagar Haveli and Daman and Diu</option>
+                                <option value="DL">Delhi</option>
+                                <option value="GA">Goa</option>
+                                <option value="GJ">Gujarat</option>
+                                <option value="HR">Haryana</option>
+                                <option value="HP">Himachal Pradesh</option>
+                                <option value="JK">Jammu and Kashmir</option>
+                                <option value="JH">Jharkhand</option>
+                                <option value="KA">Karnataka</option>
+                                <option value="KL">Kerala</option>
+                                <option value="LA">Ladakh</option>
+                                <option value="LD">Lakshadweep</option>
+                                <option value="MP">Madhya Pradesh</option>
+                                <option value="MH">Maharashtra</option>
+                                <option value="MN">Manipur</option>
+                                <option value="ML">Meghalaya</option>
+                                <option value="MZ">Mizoram</option>
+                                <option value="NL">Nagaland</option>
+                                <option value="OR">Odisha</option>
+                                <option value="PY">Puducherry</option>
+                                <option value="PB">Punjab</option>
+                                <option value="RJ">Rajasthan</option>
+                                <option value="SK">Sikkim</option>
+                                <option value="TN">Tamil Nadu</option>
+                                <option value="TG">Telangana</option>
+                                <option value="TR">Tripura</option>
+                                <option value="UP">Uttar Pradesh</option>
+                                <option value="UT">Uttarakhand</option>
+                                <option value="WB">West Bengal</option>
+                            </select>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- select state ends -->
+
+
+                  <!-- dashboard  -->
+                  <div class="card ">
+                      <div class="pb-5 m-auto row row-cols-1 row-cols-md-4 g-4">
+                        <div class="col">
+                          <div class="card border-3 border-secondary ">
+                            <div class="text-center card-body">
+                              <h5 class="card-title">Confirmed</h5>
+                              <p class="card-text">1000</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card border-3 border-warning">
+                            <div class="text-center card-body">
+                              <h5 class="card-title">Active</h5>
+                              <p class="card-text">1000</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card border-3 border-success">
+                          <div class="text-center card-body">
+                              <h5 class="card-title">Recovered</h5>
+                              <p class="card-text">1000</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card border-3 border-danger">
+                            <div class="text-center card-body">
+                              <h5 class="card-title">Deaths</h5>
+                              <p class="card-text">1000</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="m-auto mt-3 text-center card-footer bg-dark">
+                          <small class="text-muted">Last updated : ${3 mins} ago</small>
+                        </div>
+                      </div>                    
+                    </div><br><br>
+              <!--  dashboard ends-->
+
+                <!-- footer -->
+                  <footer class="py-3 pt-3 mt-4 mt-auto text-center footer bg-dark text-muted border-top">
+                  <div class="container">
+                    <span class="text-muted"> &copy; 2020 - <script>document.write(new Date().getFullYear())</script> | NCOVID2019 Tracker - India | <strong> Unoffical</strong> </span>
+                  </div>
+                </footer>
+                <!-- footer ends -->
+
+      <script src = "./js/bootstrap.bundle.js"></script>
+      <script src="./js/script.js"></script>
+     </body>
+</html>
+
+
+
+
+
+
+                            
