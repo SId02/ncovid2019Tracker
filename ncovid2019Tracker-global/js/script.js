@@ -46,3 +46,56 @@ async function getCovidapi() {
   document.querySelector("#globalDashboard").innerHTML = globalDashboard;
 }
 getCovidapi();
+
+
+
+
+/* Countries list */
+const op = document.querySelector("#op");
+async function getData() {
+  op.innerHTML = "";
+  const response = await fetch(API_URL);
+  const json = await response.json();
+  json.Countries.forEach((countryDetail) => {
+    op.innerHTML += `
+				 <div class="row row-cols-1 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title text-center">${countryDetail.Country}</h5>
+              <p class="card-text"><ul class="list-group">
+                      <li class="list-group-item">
+                        Country Code: ${countryDetail.CountryCode}
+                      </li>
+                      <li class="list-group-item list-group-item-warning">
+                        New Confirmed: ${countryDetail.NewConfirmed}
+                      </li>
+                      <li class="list-group-item list-group-item-success">
+                        New Recovered: ${countryDetail.NewRecovered}
+                      </li>
+                      <li class="list-group-item list-group-item-danger">
+                        New Deaths: ${countryDetail.NewDeaths}
+                      </li>
+                      <li class="list-group-item">
+                        Total Confirmed: <span class="badge badge-pill badge-warning"> ${countryDetail.TotalConfirmed}</span>
+                      </li>
+                      <li class="list-group-item">
+                        Total Deaths: <span class="badge badge-pill badge-danger">${countryDetail.TotalDeaths}</span>
+                      </li>
+                      <li class="list-group-item">
+                        Total Recovered: <span class="badge badge-pill badge-success"> ${countryDetail.TotalRecovered} </span>
+                      </li>
+                    </ul></p>
+                    <div class="card-footer  text-center">
+                  <small class="text-muted">Date :  ${countryDetail.Date} </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+				`;
+  });
+}
+getData();
+
+
