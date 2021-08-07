@@ -1,10 +1,10 @@
 
 # NCOVID2019 Tracker Unoffical 
 
-(Live)[https://sid02.github.io/ncovid2019Tracker/]
+[Live](https://sid02.github.io/ncovid2019Tracker/)
 
-- (Global)[https://sid02.github.io/ncovid2019Tracker/ncovid2019Tracker-global/index.html]
-- (India)[https://sid02.github.io/ncovid2019Tracker/ncovid2019Tracker-india/index.html]
+- [Global](https://sid02.github.io/ncovid2019Tracker/ncovid2019Tracker-global/index.html)
+- [India](https://sid02.github.io/ncovid2019Tracker/ncovid2019Tracker-india/index.html)
 
 #### Api list
 --------------
