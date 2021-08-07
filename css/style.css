@@ -4,3 +4,18 @@
     background-position: center;
     background-size: cover; */
 }
+
+
+.cardborderone{
+border-bottom: 3px solid #ffa500 ;
+}
+.cardbordertwo{
+border-bottom: 3px solid  #808080;
+}
+.cardborderthree{
+border-bottom: 3px solid #008000;
+}
+
+.cardborderfour{
+border-bottom: 3px solid  #ff0000;
+}
